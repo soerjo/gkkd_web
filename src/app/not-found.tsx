@@ -1,8 +1,17 @@
+'use client'
+
 import React from 'react'
+import { useRouter } from 'next/navigation'
 
 const PageNotFound = () => {
+    const router = useRouter()
+
+    React.useEffect(() => {
+        setTimeout(() => router.push("/"), 5000);
+    }, [])
+
     return (
-        <div className='mx-auto min-h-[80vh] flex justify-center items-center'>
+        <div className='mx-auto h-screen flex justify-center items-center bg-[#F3F3F3]'>
             <div className='overflow-hidden rounded-xl'>
                 <svg width={1400} height={760} viewBox="0 0 1400 760" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                     <g clipPath="url(#clip0_103_3)">

@@ -21,13 +21,9 @@ export function Footer() {
                 <ul className="flex items-center gap-4">
                     {routes.map(({ name, path }) => (
                         <li key={name}>
-                            <a
-                                href={path}
-                                target="_blank"
-                                className="py-0.5 px-1 font-normal transition-colors"
-                            >
-                                {name || ""}
-                            </a>
+
+                            {name || ""}
+
                         </li>
                     ))}
                 </ul>
